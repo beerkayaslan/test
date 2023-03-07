@@ -4915,7 +4915,7 @@ var Contents = function () {
 			if (width >= 0) {
 				this.width(width);
 				viewport.width = width;
-				this.css("padding", "0 " + width / 12 + "px", true);
+				this.css("padding", "0 14px", true);
 			}
 
 			if (height >= 0) {
@@ -13970,6 +13970,19 @@ var Themes = function () {
 		key: "fontSize",
 		value: function fontSize(size) {
 			this.override("font-size", size);
+		}
+
+		/**
+   * Adjust the font-family of a rendition
+   * @param {string} f
+   */
+
+	}
+	,
+	{
+		key: "lineHeight",
+		value: function lineHeight(size) {
+			this.override("line-height", size);
 		}
 
 		/**
